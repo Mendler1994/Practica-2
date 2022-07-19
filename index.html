@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ecommerce</title>
     <link rel="stylesheet" href="/CSS/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1>Hola</h1>
-    <ul id="lista">
-    </ul>
-
-    <template id="template-li">
-        <li class="list">
-            <b>Nombre: </b> <span class="text-danger">descripción...</spam>
-        </li>
-    </template> 
-
-    <script src="/productos.js"></script>
+    <div class="container py-5 bg-warning">
+        <h1>Contador</h1>
+        <button class="btn btn-info">
+            aumentar
+        </button>
+        <button class="btn btn-danger">
+            disminuir
+        </button>
+        <h4 class="my-5">Contador: <span id="span">0</span></h4>
+    </div>
 </body>
 </html>
