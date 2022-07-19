@@ -1,0 +1,24 @@
+$colorbg: salmon;
+@import "menu";
+@mixin estiloDeFuente($color, $fontSize) {
+    font-size: $fontSize;
+    background-color: $color;
+    color: aquamarine;
+    margin-left: 300px;
+    width: 50%;
+    height:auto;
+}
+
+body{
+   
+    h1{
+        background-color: $colorbg;
+        position: center;
+    }
+    h2{
+        @include estiloDeFuente(blue,40px);
+    }
+    h3{
+        @include estiloDeFuente(red, 18px);
+    }
+}
